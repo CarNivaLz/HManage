@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+
+
+    <title>团队项目网络管理系统 - 创建项目</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg top-navigation">
+<div id="wrapper">
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom white-bg">
+            <nav class="navbar navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <i class="fa fa-reorder"></i>
+                    </button>
+                    <a href="#" class="navbar-brand">团队项目网络管理系统</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="pace-inactive">
+                            <a aria-expanded="false" role="button" href="index.html">主页</a>
+                        </li>
+
+                        <li class="pace-inactive">
+                            <a aria-expanded="false" role="button" href="projects.html">项目</a>
+                        </li>
+
+                        <li class="pace-inactive">
+                            <a aria-expanded="false" role="button" href="achievement.html">成果</a>
+                        </li>
+                        <li class="pace-inactive">
+                            <a aria-expanded="false" role="button" href="evaluate.html">评价</a>
+                        </li>
+                        <li class="pace-inactive">
+                            <a aria-expanded="false" role="button" href="search.html">查询</a>
+                        </li>
+                        <li class="pace-inactive">
+                            <a aria-expanded="false" role="button" href="profile.html">个人</a>
+                        </li>
+
+                    </ul>
+
+
+                    <!--<ul class="nav navbar-top-links navbar-right">-->
+                    <!--<li>-->
+                    <!--<a href="login.html"><i class="fa fa-sign-out"></i> 退出</a></li>-->
+                    <!--</ul>-->
+                </div>
+            </nav>
+        </div>
+        <div class="wrapper wrapper-content">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <h3>创建项目</h3>
+                </div>
+            </div>
+            <div class="well white-bg">
+                <div class="row">
+                    <form>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label class="control-label">开始时间</label>
+                                        <input type="date" size="30" class="form-control" id="dt_stime" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label hidden-xs">项目负责人</label>
+                                        <input type="text" class="form-control" id="txt_code" placeholder="请输入正确姓名" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label hidden-xs">项目组老师1</label>
+                                        <select class="form-control" id="teacher_1">
+                                            <option value="100" selected>无</option>
+                                            <option value="1">老师a</option>
+                                            <option value="2">老师b</option>
+                                            <option value="2">老师c</option>
+                                            <option value="2">老师d</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label hidden-xs">项目组老师2</label>
+                                        <select class="form-control" id="teacher_2">
+                                            <option value="100" selected>无</option>
+                                            <option value="1">老师a</option>
+                                            <option value="2">老师b</option>
+                                            <option value="2">老师c</option>
+                                            <option value="2">老师d</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label hidden-xs">项目组老师3</label>
+                                        <select class="form-control" id="teacher_3">
+                                            <option value="100" selected>无</option>
+                                            <option value="1">老师a</option>
+                                            <option value="2">老师b</option>
+                                            <option value="2">老师c</option>
+                                            <option value="2">老师d</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label class="control-label hidden-xs">项目名称</label>
+                                        <input type="text" size="20" class="form-control" id="txt_tel" placeholder="项目全名" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>需求学生数</label>
+                                        <select class="form-control" id="slt_status">
+                                            <option value="100" selected>0</option>
+                                            <option value="0">1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="0">4</option>
+                                            <option value="1">5</option>
+                                            <option value="2">6</option>
+                                            <option value="0">7</option>
+                                            <option value="1">8</option>
+                                            <option value="2">9</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>项目级别</label>
+                                        <select class="form-control" id="slt_agent">
+                                            <option value="100" selected>默认</option>
+                                            <option value="0">校级</option>
+                                            <option value="1">省级</option>
+                                            <option value="2">国家级</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label class="control-label hidden-xs">项目描述</label>
+                                        <input type="text" class="form-control "size="100" id="project" placeholder="项目内容" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-primary" id="btn_query"> 完成</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+<!-- 自定义js -->
+
+<script src="js/plugins/suggest/bootstrap-suggest.min.js"></script>
+</body>
+</html>
